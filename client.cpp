@@ -9,7 +9,7 @@
         try
         {
             boost::asio::io_service io_service;
-            tcp::endpoint end_point(boost::asio::ip::address::from_string("127.0.0.1"), 3200);
+            tcp::endpoint end_point(boost::asio::ip::address::from_string("127.0.0.1"), 3200);  //end point
 
             tcp::socket socket(io_service);
             socket.connect(end_point);
