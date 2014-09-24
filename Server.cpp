@@ -16,7 +16,7 @@
             for (;;)
             {
                 tcp::socket socket(io_service);
-                acceptor.accept(socket);
+                acceptor.accept(socket);  //zushe
 
                 time_t now = time(0);
                 std::string message = ctime(&now);
